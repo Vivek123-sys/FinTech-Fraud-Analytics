@@ -114,7 +114,7 @@ The project uses credit card transaction data containing transaction details, cu
 
 A detailed professional report covering the project objectives, dataset overview, methodology, analysis, key findings, dashboard visuals, and conclusion.
 
-📄 **[View Project Report](FinTech_Fraud_Analytics_Professional_Report.pdf)**
+📄 **[📄 View Project Report](FinTech_Fraud_Analytics_Professional_Report%20(1).pdf)**
 
 ---
 
