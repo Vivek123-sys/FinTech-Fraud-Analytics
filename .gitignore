@@ -1,0 +1,22 @@
+
+# Large datasets - keep local, do not upload
+Dataset/fraudTest.csv
+Dataset/cleaned_fraud_transactions.csv
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Temporary files
+*.tmp
+*.log
+
+# Windows system files
+Thumbs.db
+desktop.ini
