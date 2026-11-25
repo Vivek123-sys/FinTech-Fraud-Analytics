@@ -1,152 +1,133 @@
+# 💳 FinTech Fraud Analytics
+### Financial Transaction Intelligence – Customer Behavior & Fraud Risk Analysis
 
-# 💳 Financial Transaction Intelligence – Customer Behavior & Fraud Risk Analysis
+An end-to-end data analytics project focused on analyzing financial transactions, identifying fraud patterns, understanding customer transaction behavior, and presenting actionable insights through an interactive Power BI dashboard.
+
+---
 
 ## 📌 Project Overview
 
-This project focuses on analyzing financial transactions to identify fraudulent activities, understand customer transaction behavior, and uncover patterns associated with fraud risk.
+Financial fraud is a major challenge for digital payment systems. This project analyzes transaction data to identify suspicious activities, understand fraud distribution, and explore patterns across transaction categories, time, geography, and customer demographics.
 
-Using Python, SQL, and Power BI, the project explores transaction data, performs data analysis, and presents key insights through an interactive dashboard.
-
-The objective is to transform raw transaction data into meaningful insights that can help understand fraud patterns and improve fraud monitoring.
+Using Python, SQL, and Power BI, the project transforms raw financial transaction data into meaningful insights that can support fraud monitoring and data-driven decision-making.
 
 ---
 
 ## 🎯 Objectives
 
-- Analyze financial transaction patterns.
-- Identify fraudulent and legitimate transactions.
-- Compare fraud and legitimate transaction amounts.
-- Explore fraud trends across transaction categories and locations.
-- Analyze transaction patterns across different hours of the day.
-- Build an interactive Power BI dashboard for fraud analysis.
+- Analyze financial transaction patterns and customer behavior.
+- Identify fraudulent transactions and understand fraud distribution.
+- Explore fraud activity across different hours and transaction categories.
+- Analyze geographical patterns in fraudulent transactions.
+- Compare fraudulent and legitimate transaction characteristics.
+- Build an interactive dashboard to communicate key findings.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Tech Stack
 
-| Tool | Purpose |
+| Technology | Purpose |
 |---|---|
-| Python | Data analysis and data processing |
-| Pandas | Data cleaning and manipulation |
+| Python | Data analysis and exploratory data analysis |
+| Pandas | Data cleaning, manipulation and analysis |
 | NumPy | Numerical operations |
-| SQL | Data querying and analysis |
+| SQL | Data querying and analytical operations |
 | MySQL | Database management |
 | Power BI | Interactive dashboard and visualization |
-| Jupyter Notebook | Exploratory data analysis |
+| Jupyter Notebook | Exploratory analysis and documentation |
 
 ---
 
 ## 📊 Dataset Overview
 
-The project uses financial transaction data containing information related to transaction amounts, customers, merchants, transaction categories, locations, timestamps, and fraud status.
+The project uses credit card transaction data containing transaction details, customer information, merchant information, transaction amounts, timestamps, and fraud labels.
 
-### Dataset Statistics
+| Metric | Value |
+|---|---:|
+| Total Transactions | 555,719 |
+| Fraudulent Transactions | 2,145 |
+| Legitimate Transactions | 553,574 |
+| Fraud Rate | 0.39% |
+| Unique Cardholders | 924 |
+| Merchants | 693 |
+| Transaction Categories | 14 |
+| Unique Cities | 849 |
 
-- **Total Transactions:** 555,719
-- **Fraudulent Transactions:** 2,145
-- **Legitimate Transactions:** 553,574
-- **Fraud Rate:** Approximately 0.39%
-- **Unique Cardholders:** 924
-- **Unique Merchants:** 693
-- **Transaction Categories:** 14
-- **Unique Cities:** 849
+> The raw dataset is not included in this repository due to its large size.
 
 ---
 
 ## 📈 Dashboard Preview
 
-The Power BI dashboard provides an overview of financial transactions and fraud-related patterns.
+![FinTech Fraud Analytics Dashboard](FinTech_Fraud_Analytics_Dashboard.png)
 
-### Dashboard Features
+### Dashboard Highlights
 
-- Transaction and fraud KPIs
-- Fraud vs. legitimate transaction analysis
-- Transaction amount analysis
-- Category-wise transaction analysis
-- Geographical transaction analysis
-- Time-based fraud analysis
-- Interactive filters and slicers
-
-![FinTech Fraud Analytics Dashboard](Screenshots/FinTech_Fraud_Analytics_Dashboard.png)
+- Total Transaction KPI
+- Fraud Transaction Count
+- Fraud Rate
+- Total Transaction Value
+- Fraud Activity by Hour
+- Fraud Distribution by Category
+- Daily Fraud Transaction Trends
+- Fraud vs. Legitimate Transactions
+- Fraud Distribution by Category and Gender
+- Top 5 States by Fraud Transactions
 
 ---
 
 ## 🔍 Key Insights
 
-- Fraudulent transactions represent approximately **0.39%** of total transactions.
-- Fraudulent transactions have a significantly higher median transaction amount than legitimate transactions.
-- The median fraudulent transaction amount is approximately **$371.94**, compared with **$47.15** for legitimate transactions.
-- Fraud transactions show noticeable activity during late-night hours, particularly around **10 PM and 11 PM**.
-- Transaction patterns vary across categories, geographical locations, and customer behavior.
+- Fraudulent transactions represent approximately **0.39%** of all transactions.
+- Fraud transaction amounts are significantly higher than legitimate transactions.
+- The median fraudulent transaction amount is approximately **7.87 times** the median legitimate transaction amount.
+- Fraud activity shows noticeable concentration during late-night hours.
+- Certain merchant categories contribute a higher number of fraudulent transactions.
+- Geographic analysis reveals variations in fraudulent transaction activity across states.
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Files
 
-```text
-FinTech-Fraud-Analytics/
-│
-├── Dashboard/
-│   └── FinTech_Fraud_Analytics.pbix
-│
-├── Dataset/
-│   └── Supporting analysis files
-│
-├── Notebook/
-│   └── 01_data_understanding.ipynb
-│
-├── SQL/
-│   └── fintech_analysis.sql
-│
-├── Report/
-│   └── FinTech_Fraud_Analytics_Professional_Report.pdf
-│
-├── Screenshots/
-│   └── FinTech_Fraud_Analytics_Dashboard.png
-│
-├── README.md
-└── .gitignore
-```
+| File | Description |
+|---|---|
+| `01_data_understanding.ipynb` | Exploratory Data Analysis and data understanding |
+| `fintech_analysis.sql` | SQL queries for transaction analysis |
+| `FinTech_Fraud_Analytics_Dashboard.png` | Power BI dashboard preview |
+| `FinTech_Fraud_Analytics_Professional_Report.pdf` | Detailed project report |
 
 ---
 
-## ⚙️ Project Workflow
+## 🔄 Project Workflow
 
-1. Data loading and inspection
-2. Data cleaning and preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Fraud and legitimate transaction comparison
-5. SQL-based data analysis
-6. Identification of transaction patterns
-7. KPI development and visualization
-8. Interactive dashboard creation using Power BI
-
----
-
-## 📊 Dashboard
-
-The dashboard is designed to provide a clear view of transaction performance and fraud patterns using KPIs, charts, and interactive filters.
-
-It enables users to explore transaction data based on different dimensions and identify trends that may require further investigation.
+1. Data Loading and Understanding
+2. Data Cleaning and Preprocessing
+3. Exploratory Data Analysis using Python
+4. Transaction Analysis using SQL
+5. Fraud Pattern Identification
+6. Dashboard Development using Power BI
+7. Insight Generation and Reporting
 
 ---
 
-## 🚧 Limitations
+## 📑 Project Report
 
-- Fraudulent transactions represent a small proportion of the overall dataset.
-- The analysis identifies patterns and associations but does not establish the cause of fraud.
-- The dashboard is analytical and does not perform real-time fraud detection.
-- Findings are based on the available dataset and may not represent all real-world financial transactions.
+A detailed professional report covering the project objectives, dataset overview, methodology, analysis, key findings, dashboard visuals, and conclusion.
+
+📄 **[View Project Report](FinTech_Fraud_Analytics_Professional_Report.pdf)**
 
 ---
 
-## 🚀 Future Improvements
+## 💡 Skills Demonstrated
 
-- Develop a machine learning model for fraud detection.
-- Implement anomaly detection techniques.
-- Explore advanced customer behavior patterns.
-- Develop a real-time fraud monitoring system.
-- Improve fraud risk scoring and alert mechanisms.
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Python Data Analysis
+- SQL Querying and Aggregation
+- Data Visualization
+- Dashboard Development
+- Business Insight Generation
+- Analytical Problem Solving
 
 ---
 
@@ -154,7 +135,7 @@ It enables users to explore transaction data based on different dimensions and i
 
 **Vivek Mankar**
 
-BE Information Technology | Data Analytics Enthusiast
+Data Analytics | Python | SQL | Power BI
 
 ---
 
